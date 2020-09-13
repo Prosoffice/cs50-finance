@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Recovery
+{% endblock %}
+
+{% block main %}
+  <form action="/change" method="POST">
+    <div class="form-group">
+      <input name="old" type="password" placeholder="Old Password" class="form-control">
+    </div>
+    <div class="form-group">
+      <input name="new" type="password" placeholder="New Password" class="form-control">
+    </div>
+    <div class="form-group">
+      <input name="confirm" type="password" placeholder="Confirm" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+{% endblock %}
